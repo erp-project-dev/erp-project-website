@@ -15,18 +15,24 @@ function AboutMe() {
           <div className="content">
             <h1 className="title is-size-1">ERP Project</h1>
             <h2 className="subtitle has-text-weight-light is-size-3">
-              Proyecto Rock hecho en Perú
+              Proyecto made in Perú 🎸
             </h2>
             <p className="box">
-              Este es un <span className="has-text-weight-bold">proyecto</span>{" "}
-              que busca hacer covers rockeros de canciones populares ya sean en
-              inglés o español, y/o a través de la{" "}
+              <span className="has-text-weight-bold">Proyecto</span> que
+              interpreta canciones populares como{" "}
               <span className="has-text-weight-bold">
-                colaboración de diferentes músicos
+                baladas, rock, anime, videojuegos
               </span>
-              . Asimismo, no solo se hacen covers, también hay temas{" "}
+              , etc, a un{" "}
               <span className="has-text-weight-bold">
-                instrumentales y cantados
+                estilo más rock/metal y fusión de otros géneros
+              </span>{" "}
+              ya sean en inglés, español o instrumentales.
+            </p>
+            <p className="has-text-weight-light has-text-centered">
+              No todo es cover, también hacemos{" "}
+              <span className="has-text-weight-bold">
+                composiciones propias
               </span>
               .
             </p>
