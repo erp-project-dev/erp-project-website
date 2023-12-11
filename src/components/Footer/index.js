@@ -2,12 +2,12 @@ import "./index.scss";
 
 function Footer() {
   return (
-    <footer id="footer" className="hero-foot has-text-centered is-size-6">
+    <footer id="footer" className="hero-foot has-text-centered section">
       <p>
         <strong>{new Date().getFullYear()} ERP Project</strong>
       </p>
       <p className="has-text-weight-light">
-        Proyecto peruano realizado por Eduardo Rodríguez Patiño
+        Página personal del guitarrista Eduardo Rodríguez
       </p>
     </footer>
   );

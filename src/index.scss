@@ -13,3 +13,13 @@
 body {
   font-size: 20px;
 }
+
+@include mobile {
+  #header {
+    padding-bottom: 0px;
+  }
+
+  #about-me {
+    padding-top: 0px;
+  }
+}
