@@ -1,7 +1,7 @@
 name: 🚀 Deploy website on push
 run-name: Website deployment
 
-on: workflow_dispatch
+on: push
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -26,8 +26,8 @@ jobs:
           server: ftp.errproject.io
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: public_html
-          local-dir: ./build
+          server-dir: public_html/
+          local-dir: ./build/
           exclude: |
             .well-known
             cgi-bin
