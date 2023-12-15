@@ -1,6 +1,6 @@
 function YouTube() {
   return (
-    <section className="section">
+    <div>
       <h3 className="title">Mis videos</h3>
 
       <iframe
@@ -10,7 +10,7 @@ function YouTube() {
         src="https://www.youtube.com/embed/videoseries?si=N0qCCZIeFhInsx-n&amp;list=PLH2F_69GF7BeW1Y6ivgt4izTUUmnSNdvj"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       ></iframe>
-    </section>
+    </div>
   );
 }
 

@@ -1,5 +1,11 @@
 @import "~bulma/bulma.sass";
 
+.erp-project {
+  .column {
+    padding: 3em 1.5em !important;
+  }
+}
+
 .hero {
   background: rgb(34, 34, 34);
   background: linear-gradient(

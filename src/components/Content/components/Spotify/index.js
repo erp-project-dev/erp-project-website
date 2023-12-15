@@ -1,6 +1,6 @@
 function Spotify() {
   return (
-    <section className="section">
+    <div className="has-text-right-desktop">
       <h3 className="title">Mi música</h3>
 
       <iframe
@@ -11,7 +11,7 @@ function Spotify() {
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
-    </section>
+    </div>
   );
 }
 

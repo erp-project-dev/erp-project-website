@@ -7,12 +7,12 @@ import YouTube from "./components/YouTube";
 
 function Content() {
   return (
-    <div className="hero-body">
+    <div className="hero-body erp-project">
       <div className="container">
         <AboutMe />
 
         <div className="columns">
-          <div className="column is-7">
+          <div className="column is-6">
             <FollowMe />
           </div>
           <div className="column">
