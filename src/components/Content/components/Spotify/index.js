@@ -1,7 +1,7 @@
 function Spotify() {
   return (
     <section className="section">
-      <h3 className="title">Algunos trabajos realizados</h3>
+      <h3 className="title">Mi música</h3>
 
       <iframe
         title="ERP Project Spotify"

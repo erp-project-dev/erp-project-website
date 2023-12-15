@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import AboutMe from "./components/AboutMe";
 import AvailableFor from "./components/AvailableFor";
 import FollowMe from "./components/FollowMe";
 import Spotify from "./components/Spotify";
+import YouTube from "./components/YouTube";
 
 function Content() {
   return (
@@ -18,7 +20,14 @@ function Content() {
           </div>
         </div>
 
-        <Spotify />
+        <div className="columns">
+          <div className="column">
+            <Spotify />
+          </div>
+          <div className="column is-6">
+            <YouTube />
+          </div>
+        </div>
       </div>
     </div>
   );
