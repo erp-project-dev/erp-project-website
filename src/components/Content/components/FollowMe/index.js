@@ -8,7 +8,10 @@ function FollowMe() {
       <h2 className="title">Sígueme en</h2>
       <ul className="links">
         <li>
-          <SocialIcon url="https://www.instagram.com/erpprojectofficial/" />
+          <SocialIcon url="https://www.instagram.com/erpprojectofficial" />
+        </li>
+        <li>
+          <SocialIcon url="https://www.tiktok.com/@erpprojectofficial" />
         </li>
         <li>
           <SocialIcon url="https://www.youtube.com/c/erpproject?sub_confirmation=1" />

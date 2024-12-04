@@ -17,13 +17,12 @@ function AboutMe() {
             Soy Eduardo, guitarrista de Perú 🎸
           </h2>
           <p className="box">
-            Que reimagina <b>canciones populares</b> a un estilo más propio como{" "}
-            <b>rock/metal, fusión</b> y otros <b>géneros musicales</b>.
+            Que transformo <b>canciones populares</b> a un estilo más propio
+            como <b>rock/metal, fusión</b> y otros <b>géneros musicales</b>.
           </p>
           <p className="is-size-6">
-            No todo es cover, también ando trabajando en <b>temas propios</b>{" "}
-            que más adelante compartiré para regresar a los{" "}
-            <b>escenarios en el 2025</b>.
+            Por otro lado, estoy trabajando en mis propias composiciones con el
+            objetivo de volver a los escenarios como guitarrista.
           </p>
         </div>
       </div>

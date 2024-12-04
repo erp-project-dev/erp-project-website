@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import AboutMe from "./components/AboutMe";
+import Announcement from "./components/Announcement";
 import AvailableFor from "./components/AvailableFor";
 import FollowMe from "./components/FollowMe";
 import Spotify from "./components/Spotify";
@@ -9,6 +10,7 @@ function Content() {
   return (
     <div className="hero-body erp-project">
       <div className="container">
+        <Announcement />
         <AboutMe />
 
         <div className="columns">

@@ -7,7 +7,7 @@ function Footer() {
         <strong>{new Date().getFullYear()} ERP Project</strong>
       </p>
       <p className="has-text-weight-light">
-        Página personal del guitarrista Eduardo Rodríguez
+        Página personal del guitarrista Eduardo Rodríguez Patiño
       </p>
     </footer>
   );
