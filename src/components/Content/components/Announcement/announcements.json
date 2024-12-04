@@ -1,3 +1,14 @@
 [
-    "Escucha mi <a class='has-text-warning' href='https://www.youtube.com/watch?v=7Nv_yiwoZ4c'>cover de BABYMETAL</a> en YouTube 🤘"
+    {
+        "enabled": true,
+        "content": "Escucha mi <a class='has-text-warning' href='https://www.youtube.com/watch?v=7Nv_yiwoZ4c'>cover de BABYMETAL</a> en YouTube 🤘",
+        "preferredStartDate": null,
+        "preferredEndDate": null
+    },
+    {
+        "enabled": true,
+        "content": "Me encuentro trabajando el remake de mi tema <a class='has-text-primary' href='https://www.youtube.com/watch?v=WHBj50OhL74'>Two Worlds</a> 🤘",
+        "preferredStartDate": null,
+        "preferredEndDate": null
+    }
 ]
