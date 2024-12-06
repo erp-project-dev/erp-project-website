@@ -7,8 +7,14 @@
     },
     {
         "enabled": true,
-        "content": "Me encuentro trabajando el remake de mi tema <a class='has-text-primary' href='https://www.youtube.com/watch?v=WHBj50OhL74'>Two Worlds</a> 🤘",
+        "content": "Me encuentro trabajando en el remake de mi tema <a class='has-text-primary' href='https://www.youtube.com/watch?v=WHBj50OhL74'>Two Worlds</a> 🤘",
         "preferredStartDate": null,
         "preferredEndDate": null
+    },
+    {
+        "enabled": true,
+        "content": "Les compartimos <a class='has-text-warning' href='https://www.youtube.com/watch?v=WHBj50OhL74'>nuestro cover de Dragon Ball Z</a> 🎸🔥",
+        "preferredStartDate": "2024/12/06",
+        "preferredEndDate": "2024/12/31"
     }
 ]
