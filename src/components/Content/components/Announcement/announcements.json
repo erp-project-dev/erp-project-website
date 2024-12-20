@@ -1,20 +1,20 @@
 [
     {
         "enabled": true,
-        "content": "Escucha mi <a class='has-text-warning' href='https://www.youtube.com/watch?v=7Nv_yiwoZ4c'>cover de BABYMETAL</a> en YouTube 🤘",
-        "preferredStartDate": null,
-        "preferredEndDate": null
-    },
-    {
-        "enabled": true,
-        "content": "Me encuentro trabajando en el remake de mi tema <a class='has-text-primary' href='https://www.youtube.com/watch?v=WHBj50OhL74'>Two Worlds</a> 🤘",
+        "content": "Escucha el remake de mi tema <a class='has-text-primary' href='https://open.spotify.com/intl-es/track/5RkbFonUzBHS6uDxPDQG9U?si=d9444fc6568249ee'>Two Worlds</a> en Spotify 🤘",
         "preferredStartDate": null,
         "preferredEndDate": null
     },
     {
         "enabled": true,
         "content": "Les compartimos <a class='has-text-warning' href='https://www.youtube.com/watch?v=rgaPLWPoSi4'>nuestro cover de Dragon Ball Z</a> 🎸🔥",
-        "preferredStartDate": "2024/12/06",
-        "preferredEndDate": "2024/12/31"
+        "preferredStartDate": null,
+        "preferredEndDate": null
+    },
+    {
+        "enabled": true,
+        "content": "Escucha mi <a class='has-text-success' href='https://www.youtube.com/watch?v=7Nv_yiwoZ4c'>cover de BABYMETAL</a> en YouTube 🤘",
+        "preferredStartDate": null,
+        "preferredEndDate": null
     }
 ]
