@@ -1,10 +1,14 @@
 name: 🚀 Deploy website on push
 run-name: Website deployment
 
-on: push
+on:
+  push:
+    branches:
+      - master
+
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: 🎉 Deploy to GitHub Pages
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
@@ -19,15 +23,10 @@ jobs:
         run: |
           npm install
           npm run build
+          mv build docs # Mover la carpeta build a docs
 
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: 🚀 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          server: ftp.erpproject.io
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./build/
-          exclude: |
-            .well-known
-            cgi-bin
-            .htaccess
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs
