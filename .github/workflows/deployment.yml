@@ -1,4 +1,5 @@
 name: Deploy static content to Pages
+run-name: Website deployment
 
 on:
   push:
