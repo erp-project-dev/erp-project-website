@@ -12,17 +12,18 @@ function AboutMe() {
       </div>
       <div className="column">
         <div className="content">
-          <h1 className="title is-size-1">Acerca de mí</h1>
+          <h1 className="title is-size-1">Eduardo Rodríguez</h1>
           <h2 className="subtitle is-size-3 has-text-weight-light">
-            Soy Eduardo, guitarrista de Perú 🎸
+            🎸 Guitarrista peruano
           </h2>
           <p className="box">
-            Que transformo <b>canciones populares</b> a un estilo más propio
-            como <b>rock/metal, fusión</b> y otros <b>géneros musicales</b>.
+            Que ha venido haciendo <b>colaboraciones</b> con otros músicos para
+            reimaginar temas a un estilo más propio y{" "}
+            <b>actualmente trabajando</b> en sus <b>temas propios</b>.
           </p>
           <p className="is-size-6">
-            Por otro lado, estoy trabajando en mis propias composiciones con el
-            objetivo de volver a los escenarios como guitarrista.
+            Puedes seguirme en mis redes sociales para estar al tanto de mis
+            últimos proyectos y presentaciones.
           </p>
         </div>
       </div>
