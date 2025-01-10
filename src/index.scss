@@ -1,5 +1,25 @@
 @import "~bulma/bulma.sass";
 
+.hero {
+  &.is-dark {
+    background: linear-gradient(-45deg, #121212, #2c2c2c, #1f1f1f, #3a3a3a);
+    background-size: 400% 400%;
+    animation: gradient-animation 8s ease infinite;
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .erp-project {
   .column {
     padding: 3em 1.5em !important;

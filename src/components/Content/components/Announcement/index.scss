@@ -4,7 +4,27 @@
     border-radius: 10px;
 
     @media (max-width: 768px) {
-      border: none;
+    }
+  }
+}
+
+#announcement {
+  &.notification {
+    border: 1px solid hsl(348, 86%, 61%);
+    border-radius: 10px;
+    border: none;
+
+    align-items: center;
+    display: flex;
+
+    .notification-content {
+      flex: 1;
+    }
+
+    @media (max-width: 768px) {
+      button {
+        display: none;
+      }
     }
   }
 }

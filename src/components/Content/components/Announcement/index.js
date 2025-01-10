@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
 
 import "./index.scss";
 import announcements from "./announcements.json";
@@ -51,24 +52,18 @@ function Announcement() {
 
   return (
     <div id="announcement" className="notification is-black">
-      <div className="columns is-centered">
-        <div className="column is-2 has-text-right is-hidden-mobile">
-          <button className="button is-danger is-outlined" onClick={handlePrev}>
-            ←
-          </button>
-        </div>
+      <button className="button is-danger is-outlined" onClick={handlePrev}>
+        <FaAngleLeft />
+      </button>
 
-        <div
-          className="column is-8 has-text-centered"
-          dangerouslySetInnerHTML={{ __html: contents[currentIndex] }}
-        ></div>
+      <div
+        className="notification-content has-text-centered"
+        dangerouslySetInnerHTML={{ __html: contents[currentIndex] }}
+      ></div>
 
-        <div className="column is-2 is-hidden-mobile">
-          <button className="button is-danger is-outlined" onClick={handleNext}>
-            →
-          </button>
-        </div>
-      </div>
+      <button className="button is-danger is-outlined" onClick={handleNext}>
+        <FaAngleRight />
+      </button>
     </div>
   );
 }
