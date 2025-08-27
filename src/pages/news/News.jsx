@@ -2,14 +2,14 @@ import news from "./news.json";
 
 function News() {
   return (
-    <section id="news">
+    <section id="news" className="bg-gray-900">
       <div className="mx-auto px-6 max-w-6xl py-24">
         <div className="flex items-center justify-center mb-16">
-          <div className="flex-grow h-px bg-gray-800"></div>
+          <div className="flex-grow h-px bg-cyan-800"></div>
           <h2 className="px-6 text-3xl md:text-4xl font-bold text-cyan-400 uppercase">
             Novedades
           </h2>
-          <div className="flex-grow h-px bg-gray-800"></div>
+          <div className="flex-grow h-px bg-cyan-800"></div>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
@@ -18,7 +18,7 @@ function News() {
             .map((item, index) => (
               <div
                 key={index}
-                className="bg-gray-900 rounded-xl shadow-lg p-6 flex flex-col justify-between"
+                className="bg-gray-950 rounded-xl shadow-lg p-6 flex flex-col justify-between"
               >
                 <div>
                   <h3 className="text-xl font-semibold mb-3">{item.title}</h3>

@@ -11,14 +11,14 @@ function ContactMe() {
     "w-12 h-12 flex items-center justify-center rounded-full text-white text-2xl transition-transform transform hover:scale-110";
 
   return (
-    <section id="contact" className="bg-gray-900 text-white">
+    <section id="contact">
       <div className="mx-auto px-6 max-w-6xl py-24 text-center">
         <div className="flex items-center justify-center mb-12">
-          <div className="flex-grow h-px bg-gray-700"></div>
+          <div className="flex-grow h-px bg-cyan-800"></div>
           <h2 className="px-6 text-3xl md:text-4xl font-bold text-cyan-400 uppercase">
             Sígueme en
           </h2>
-          <div className="flex-grow h-px bg-gray-700"></div>
+          <div className="flex-grow h-px bg-cyan-800"></div>
         </div>
 
         <div className="flex justify-center gap-6 mb-8">
