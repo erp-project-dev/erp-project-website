@@ -23,13 +23,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate data file
-        run: npm run build:data
-        env:
-          GOOGLE_CLIENT_EMAIL: ${{ secrets.GOOGLE_CLIENT_EMAIL }}
-          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
-          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
-
       - name: Build project
         run: npm run build
 
