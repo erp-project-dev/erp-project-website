@@ -1,0 +1,34 @@
+{
+  "youtubePlaylistUrl": "https://www.youtube.com/embed/videoseries?si=yfDOeS1LidNbvMuW&amp;list=PLH2F_69GF7BeW1Y6ivgt4izTUUmnSNdvj",
+  "spotifyPlaylistUrl": "https://open.spotify.com/embed/artist/6xR1HRj6SzReee9R2EkOUo?utm_source=generator&theme=0",
+  "news": [
+    {
+      "category": "single",
+      "title": "Alone - Nuevo Tema",
+      "description": "Reflejo de una faceta con la que muchos nos identificamos, un mundo superficial creado detrás de la vida real hasta que ya no se soporta más y se estalla.",
+      "link": "https://www.youtube.com/watch?v=rgaPLWPoSi4",
+      "date": "2025-08-30"
+    },
+    {
+      "category": "cover",
+      "title": "Dragon Ball Z - Cha-La Head-Cha-La Cover",
+      "description": "Un homenaje cargado de fuerza a la obra de Akira Toriyama, grabado junto a grandes amigos guitarristas para revivir toda la energía de este clásico inolvidable.",
+      "link": "https://www.youtube.com/watch?v=rgaPLWPoSi4",
+      "date": "2024-12-15"
+    },
+    {
+      "category": "cover",
+      "title": "BABYMETAL - RATATA (Cover)",
+      "description": "Mi reimaginación del poderoso tema RATATA de BABYMETAL, grabado junto a músicos de la escena local en un proyecto que exigió esfuerzo y dedicación de producción.",
+      "link": "https://www.youtube.com/watch?v=7Nv_yiwoZ4c",
+      "date": "2024-10-11"
+    },
+    {
+      "category": "single",
+      "title": "Two Worlds Remake",
+      "description": "El remake de mi primer tema instrumental, una obra que explora dos facetas importantes de mi vida y regresa con nuevos arreglos y una producción renovada.",
+      "link": "https://open.spotify.com/intl-es/track/377tm2QqypVxiMJkWJEijk?si=ac0b41a0114646cc&nd=1&dlsi=58cbb7426e5b46a7",
+      "date": "2024-09-11"
+    }
+  ]
+}

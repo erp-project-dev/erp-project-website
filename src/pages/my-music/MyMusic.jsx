@@ -1,4 +1,4 @@
-import { youtubePlaylistUrl, spotifyPlaylistUrl } from "../../config.json";
+import { youtubePlaylistUrl, spotifyPlaylistUrl } from "../../source.json";
 
 function MyMusic() {
   return (
