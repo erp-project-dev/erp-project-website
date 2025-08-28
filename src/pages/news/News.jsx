@@ -1,7 +1,25 @@
+import { useState, useMemo } from "react";
 import { news } from "../../source.json";
-import { FaInfo, FaSpotify, FaYoutube } from "react-icons/fa";
+import NewsDate from "./components/NewsDate";
+import NewsHeader from "./components/NewsHeader";
+import NewsPager from "./components/NewsPager";
 
 function News() {
+  const [page, setPage] = useState(0);
+  const pageSize = 4;
+
+  const sorted = useMemo(
+    () =>
+      [...news].sort(
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+      ),
+    []
+  );
+
+  const total = Math.ceil(sorted.length / pageSize);
+  const start = page * pageSize;
+  const visible = sorted.slice(start, start + pageSize);
+
   const getSource = (link) => {
     if (link) {
       if (link.includes("youtube") || link.includes("youtu.be"))
@@ -11,69 +29,19 @@ function News() {
     return "unknown";
   };
 
-  const getSourceIcon = (source) => {
-    switch (source) {
-      case "youtube":
-        return <FaYoutube className="w-4 h-4" />;
-      case "spotify":
-        return <FaSpotify className="w-4 h-4" />;
-      default:
-        return <FaInfo className="w-4 h-4" />;
-    }
-  };
-
-  const getCategoryColor = (category) => {
-    switch (category) {
-      case "single":
-        return "text-yellow-400";
-      case "cover":
-        return "text-red-400";
-      case "announcement":
-        return "text-purple-400";
-      case "event":
-        return "text-green-400";
-      default:
-        return "text-cyan-400";
-    }
-  };
-
-  const getCategoryHover = (category) => {
-    switch (category) {
-      case "single":
-        return "group-hover:text-yellow-400";
-      case "cover":
-        return "group-hover:text-red-400";
-      case "announcement":
-        return "group-hover:text-purple-400";
-      case "event":
-        return "group-hover:text-green-400";
-      default:
-        return "group-hover:text-cyan-400";
-    }
-  };
-
   const getCategoryBorder = (category) => {
     switch (category) {
       case "single":
         return "hover:border-yellow-400";
       case "cover":
         return "hover:border-red-400";
-      case "announcement":
+      case "info":
         return "hover:border-purple-400";
       case "event":
         return "hover:border-green-400";
       default:
         return "hover:border-cyan-400";
     }
-  };
-
-  const getDateParts = (date) => {
-    const d = new Date(date);
-    const day = d.getDate().toString().padStart(2, "0");
-    const month = d
-      .toLocaleDateString("es-ES", { month: "short" })
-      .toUpperCase();
-    return { day, month };
   };
 
   return (
@@ -88,60 +56,37 @@ function News() {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
-          {news
-            .sort(
-              (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-            )
-            .map((item, index) => {
-              const source = getSource(item.link);
-              const icon = getSourceIcon(source);
-              const color = getCategoryColor(item.category);
-              const hoverColor = getCategoryHover(item.category);
-              const borderHover = getCategoryBorder(item.category);
-              const { day, month } = getDateParts(item.date);
-
-              return (
-                <a
-                  key={index}
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`relative bg-gray-950 rounded-xl p-6 flex flex-col 
-                              shadow-lg border-l-4 border-gray-400 
-                              hover:shadow-gray-900
-                              transition-all duration-300 group hover:scale-[1.02] hover:-translate-y-1 ${borderHover}`}
-                >
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <span
-                        className={`${color} flex items-center gap-1 text-xs font-semibold uppercase tracking-wide`}
-                      >
-                        {icon}
-                        {item.category}
-                      </span>
-                      <h3
-                        className={`mt-1 text-lg md:text-xl font-bold text-white transition-colors ${hoverColor}`}
-                      >
-                        {item.title}
-                      </h3>
-                    </div>
-                    <div className="flex flex-col items-center justify-center bg-gray-800 rounded p-1 w-12">
-                      <span className="text-lg font-bold text-white leading-none">
-                        {day}
-                      </span>
-                      <span className="text-[10px] font-semibold text-gray-400 leading-none">
-                        {month}
-                      </span>
-                    </div>
-                  </div>
-
-                  <p className="mt-3 text-gray-400 text-sm leading-relaxed">
-                    {item.description}
-                  </p>
-                </a>
-              );
-            })}
+          {visible.map((item, index) => {
+            const borderHover = getCategoryBorder(item.category);
+            return (
+              <a
+                key={`${item.title}-${index}`}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`relative bg-gray-950 rounded-xl p-6 flex flex-col shadow-lg border-l-4 border-gray-400 hover:shadow-gray-900 transition-all duration-300 group hover:scale-[1.02] hover:-translate-y-1 ${borderHover}`}
+              >
+                <div className="flex justify-between items-start">
+                  <NewsHeader
+                    category={item.category}
+                    source={getSource(item.link)}
+                    title={item.title}
+                  />
+                  <NewsDate date={item.date} />
+                </div>
+                <p className="mt-3 text-gray-400 text-sm leading-relaxed">
+                  {item.description}
+                </p>
+              </a>
+            );
+          })}
         </div>
+
+        {total > 1 && (
+          <div className="mt-6 flex justify-center">
+            <NewsPager total={total} current={page} onChange={setPage} />
+          </div>
+        )}
       </div>
     </section>
   );

@@ -14,11 +14,11 @@ function ContactMe() {
     <section id="contact">
       <div className="mx-auto px-6 max-w-6xl py-24 text-center">
         <div className="flex items-center justify-center mb-12">
-          <div className="flex-grow h-px bg-cyan-800"></div>
-          <h2 className="px-6 text-3xl md:text-4xl font-bold text-cyan-400 uppercase">
+          <div className="flex-grow h-px bg-gray-600"></div>
+          <h2 className="px-6 text-3xl md:text-4xl font-bold text-gray-100 uppercase">
             Sígueme en
           </h2>
-          <div className="flex-grow h-px bg-cyan-800"></div>
+          <div className="flex-grow h-px bg-gray-600"></div>
         </div>
 
         <div className="flex justify-center gap-6 mb-8">
