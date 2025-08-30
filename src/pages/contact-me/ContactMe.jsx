@@ -8,7 +8,7 @@ import {
 
 function ContactMe() {
   const iconClasses =
-    "w-12 h-12 flex items-center justify-center rounded-full text-white text-2xl transition-transform transform hover:scale-110";
+    "w-12 h-12 flex items-center justify-center rounded-full text-white text-2xl transition-transform transform hover:scale-140";
 
   return (
     <section id="contact">

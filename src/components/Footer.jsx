@@ -8,7 +8,7 @@ function Footer() {
         <span className="text-cyan-400 font-semibold">ERP Project</span>
       </p>
       <p className="text-sm">
-        Página personal del guitarrista Eduardo Rodríguez Patiño
+        Página personal de Eduardo Rodríguez Patiño, guitarrista de Perú.
       </p>
     </footer>
   );

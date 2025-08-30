@@ -1,8 +1,11 @@
 import { useState, useMemo } from "react";
-import { news } from "../../source.json";
+
 import NewsDate from "./components/NewsDate";
 import NewsHeader from "./components/NewsHeader";
 import NewsPager from "./components/NewsPager";
+import NewsContent from "./components/NewsContent";
+
+import { news } from "../../source.json";
 
 function News() {
   const [page, setPage] = useState(0);
@@ -74,9 +77,7 @@ function News() {
                   />
                   <NewsDate date={item.date} />
                 </div>
-                <p className="mt-3 text-gray-400 text-sm leading-relaxed">
-                  {item.description}
-                </p>
+                <NewsContent content={item.content} />
               </a>
             );
           })}
