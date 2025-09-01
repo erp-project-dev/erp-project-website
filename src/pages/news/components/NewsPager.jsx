@@ -15,10 +15,10 @@ export default function NewsPager({
           <button
             key={i}
             onClick={() => onChange(i)}
-            className={`h-3 w-3 rounded-full transition cursor-pointer ${
+            className={`h-4 w-4 rounded-full transition ${
               active
-                ? "bg-yellow-400 scale-160"
-                : "bg-white/30 hover:bg-white/50"
+                ? "bg-yellow-400 scale-140"
+                : "bg-white/30 hover:bg-white/50 cursor-pointer"
             }`}
           />
         );
