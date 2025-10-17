@@ -3,7 +3,14 @@
   "spotifyPlaylistUrl": "https://open.spotify.com/embed/artist/6xR1HRj6SzReee9R2EkOUo?utm_source=generator&theme=0",
   "news": [
     {
-      "category": "single",
+      "category": "original",
+      "title": "Nunca Dije Nada",
+      "content": "Una power ballad sobre el amor que nunca se confesó, los silencios que duelen y lo que se pierde cuando el miedo impide hablar. Así de intensa es mi nueva canción.",
+      "link": "https://www.youtube.com/watch?v=0Li3z_EutN8",
+      "date": "2025-10-16"
+    },
+    {
+      "category": "original",
       "title": "Alone - Nuevo Tema",
       "content": "Reflejo de una faceta con la que muchos nos identificamos, un mundo superficial creado detrás de la vida real hasta que ya no se soporta más y se estalla.",
       "link": "https://www.youtube.com/watch?v=PmyqZ3izalA",
@@ -24,7 +31,7 @@
       "date": "2024-10-11"
     },
     {
-      "category": "single",
+      "category": "original",
       "title": "Two Worlds Remake",
       "content": "El remake de mi primer tema instrumental, una obra que explora dos facetas importantes de mi vida y regresa con nuevos arreglos y una producción renovada.",
       "link": "https://open.spotify.com/intl-es/track/377tm2QqypVxiMJkWJEijk?si=ac0b41a0114646cc&nd=1&dlsi=58cbb7426e5b46a7",
